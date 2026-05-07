@@ -34,11 +34,11 @@ O projeto foi construído seguindo boas práticas de arquitetura backend utiliza
 ## 📦 Instalação e Execução Local
 
 Clonar o repositório
-git clone https://github.com/seu-usuario/blog-pessoal-api.git
+git clone https://github.com/macedoo15/blog-pessoal-api.git
 
 ---
 ## Documentação da API (Swagger)
-https://blogpessoa-1arj.onrender.com/swagger
+
 
 ## 👨‍💻 Autor
 
