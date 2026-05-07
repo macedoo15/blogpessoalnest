@@ -49,6 +49,36 @@ Node.js | NestJS | TypeScript | APIs REST
 LinkedIn:https://www.linkedin.com/in/daniel-macedo33/
 
 
+---
+
+## Deploy no Render
+
+Configure o Web Service no Render com:
+
+Build Command:
+```bash
+npm install && npm run build
+```
+
+Start Command:
+```bash
+npm run start:prod
+```
+
+Variaveis de ambiente:
+
+```env
+DATABASE_URL=cole_aqui_a_Internal_Database_URL_do_PostgreSQL_do_Render
+DB_SSL=true
+```
+
+Use a Internal Database URL quando a API e o PostgreSQL estiverem no Render, na mesma regiao. Para rodar localmente com PostgreSQL local, crie um arquivo `.env` baseado no `.env.example` e use `DB_SSL=false`.
+
+Depois do deploy, a documentacao fica em:
+
+```text
+https://seu-servico.onrender.com/swagger
+```
 
 
 

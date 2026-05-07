@@ -18,13 +18,12 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/swagger', app, document);
-  await app.listen(process.env.PORT ?? 4000);
-
   process.env.TZ = '-03:00';
 
   app.useGlobalPipes(new ValidationPipe());
-
   app.enableCors();
+
+  await app.listen(process.env.PORT ?? 4000);
 }
 bootstrap().catch((error) => {
   console.error('Erro ao iniciar aplicação:', error);
